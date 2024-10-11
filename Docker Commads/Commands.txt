@@ -1,0 +1,128 @@
+docker  run -it  <image_name>  (Run or Pull Image in local machine)
+
+
+
+docker images  (Show all images locally)
+
+
+
+docker ps          (show only running containers)
+
+
+
+docker ps -a      (show all  containers)
+
+
+
+docker start <container_id OR container_name>  (start a specific container)
+
+
+
+docker stop <container_id OR container_name>    (stop a specific container)
+
+
+
+docker exec -it <container_id OR container_name> bash  (Working inside a already running container)
+
+
+
+docker run -it -p PORT(Local Machine):PORT(Container) <image_name>
+
+
+
+eg. docker run -it -p 6000:6000 adarshlkdev/mynodeapp
+
+
+
+docker build -t <own_image_name> .   (for build the docker image locally)
+
+
+
+docker run -it -e PORT=3000 -p 3000:3000 <image_name>  (run image using env var)
+
+
+
+
+
+My Own Docker image published on Docker Hub
+
+
+
+e.g `docker run -it -e PORT=3000 -p 3000:3000 adarshlkdev/sample-node-app` 
+
+
+
+We have to use docker-compose.yml file for configuration
+
+
+
+docker compose up
+
+
+
+docker compose down
+
+
+
+docker pull <image_name>
+
+
+
+e.g. docker pull busybox
+
+
+
+docker run -it --name my-container busybox  (Give any name to the container of the specified image)
+
+
+
+docker network create -d bridge thor
+
+
+
+docker run -it --network=thor --name thor-avengers ubuntu
+
+
+
+docker network ls
+
+
+
+docker network inspect bridge
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
